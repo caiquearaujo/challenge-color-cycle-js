@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"strict": true,
+		"allowJs": false,
+		"esModuleInterop": true,
+		"sourceMap": false,
+		"noImplicitThis": true,
+		"baseUrl": ".",
+		"declaration": true,
+		"outDir": "./lib",
+		"resolveJsonModule": true,
+		"paths": {
+			"@/*": [
+				"src/*",
+			],
+		},
+		"lib": [
+			"esnext",
+			"dom",
+			"dom.iterable",
+		],
+	},
+	"include": [
+		"./src/**/*",
+		"./test/**/*"
+	],
+	"exclude": [
+		"./node_modules",
+		"./dist",
+		"./test"
+	]
+ }
