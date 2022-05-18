@@ -27,6 +27,11 @@ describe('Color Manipulation', () => {
 			increment: { R: 800, G: 800, B: 800 },
 			output: { R: 65, G: 65, B: 65 },
 		},
+		{
+			color: { R: 255, G: 255, B: 255 },
+			increment: { R: 1, G: 1, B: 1 },
+			output: { R: 1, G: 1, B: 1 },
+		},
 	];
 
 	it.each(increments)(
@@ -170,6 +175,30 @@ describe('Color Manipulation', () => {
 		{
 			hex: '1C542D',
 			output: { R: 28, G: 84, B: 45 },
+		},
+		{
+			hex: 'A',
+			output: { R: 160, G: 0, B: 0 },
+		},
+		{
+			hex: 'AA',
+			output: { R: 170, G: 0, B: 0 },
+		},
+		{
+			hex: 'AAA',
+			output: { R: 170, G: 170, B: 170 },
+		},
+		{
+			hex: 'AAAA',
+			output: { R: 170, G: 170, B: 0 },
+		},
+		{
+			hex: 'AAAAA',
+			output: { R: 170, G: 170, B: 160 },
+		},
+		{
+			hex: 'AAAAAA',
+			output: { R: 170, G: 170, B: 170 },
 		},
 	];
 

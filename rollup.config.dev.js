@@ -46,10 +46,10 @@ module.exports = [
 			resolve({ browser: true }),
 			typescript(),
 			scss({
-				output: 'public/dist/styles.css',
+				output: './public/dist/styles.css',
 				processor: () => postcss([autoprefixer()]),
 				outputStyle: 'compressed',
-				watch: 'src/styles',
+				watch: './src/styles',
 			}),
 			serve(),
 			livereload('public'),
